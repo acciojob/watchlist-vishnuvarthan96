@@ -31,12 +31,12 @@ public class Director {
     private String name;
     private int numberOfMovies;
     private double imbdRating;
-    Director(String name,int numberOfMovies,double imbdRating){
+   public Director(String name,int numberOfMovies,double imbdRating){
         this.name=name;
         this.numberOfMovies=numberOfMovies;
         this.imbdRating =imbdRating;
     }
-    Director(){
+    public Director(){
         this.name="";
         this.imbdRating =0;
         this.numberOfMovies=0;

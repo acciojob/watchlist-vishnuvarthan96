@@ -13,24 +13,24 @@ import java.util.List;
 @Service
 public class MovieService {
     MovieRepository repo=new MovieRepository();
-    void addMovie(Movie movie){
+    public void addMovie(Movie movie){
       repo.addMovie(movie);
     }
-    void addDirector(Director director){
+    public void addDirector(Director director){
         repo.addDirector(director);
     }
-   void addMovieDirectorPair(String directorName,String movieName){
+  public  void addMovieDirectorPair(String directorName,String movieName){
         repo.addMovieDirectorPair(directorName,movieName);
    }
-   Movie getMovieByName(String name){
+   public Movie getMovieByName(String name){
         return repo.getMovieByName(name);
    }
 
-    Director getDirectorByName(String name){
+    public Director getDirectorByName(String name){
         return repo.getDirectorByName(name);
     }
 
-    List<String> getMoviesByDirectorName(String name){
+    public List<String> getMoviesByDirectorName(String name){
         HashMap<Movie,Director> pairData=repo.getMoviesByDirectorName();
        List<String> movieName=new ArrayList<>();
         for(Movie movie:pairData.keySet()){
@@ -41,7 +41,7 @@ public class MovieService {
         return movieName;
     }
 
-    List<String> findAllMovies(){
+    public List<String> findAllMovies(){
         HashMap<String,Movie> movieData=repo.findAllMovies();
         List<String> movieName=new ArrayList<>();
         for(Movie movie: movieData.values()){
@@ -49,10 +49,10 @@ public class MovieService {
         }
         return movieName;
     }
-    void deleteDirectorByName(String name){
+   public void deleteDirectorByName(String name){
         repo.deleteDirectorByName(name);
     }
-    void deleteAllDirector(){
+    public void deleteAllDirector(){
         repo.deleteAllDirectors();
     }
 

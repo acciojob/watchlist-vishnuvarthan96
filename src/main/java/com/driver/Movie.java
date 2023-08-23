@@ -31,12 +31,12 @@ public class Movie {
     private String name;
     private int durationInMinutes;
     private double imbdRating;
-    Movie(String name,int durationInMinutes,double imbdRating){
+     public Movie(String name,int durationInMinutes,double imbdRating){
         this.name=name;
         this.durationInMinutes=durationInMinutes;
         this.imbdRating=imbdRating;
     }
-    Movie(){
+   public Movie(){
         this.name="";
         this.imbdRating=0;
         this.durationInMinutes=0;
