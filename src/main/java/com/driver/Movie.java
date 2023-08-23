@@ -20,25 +20,25 @@ public class Movie {
         this.durationInMinutes = durationInMinutes;
     }
 
-    public double getImbdRating() {
-        return ImbdRating;
+    public double getImdbRating() {
+        return ImdbRating;
     }
 
-    public void setImbdRating(double imbdRating) {
-        this.ImbdRating = imbdRating;
+    public void setImdbRating(double imdbRating) {
+        this.ImdbRating = imdbRating;
     }
 
     private String name;
     private int durationInMinutes;
-    private double ImbdRating;
-     public Movie(String name,int durationInMinutes,double imbdRating){
+    private double ImdbRating;
+     public Movie(String name,int durationInMinutes,double imdbRating){
         this.name=name;
         this.durationInMinutes=durationInMinutes;
-        this.ImbdRating =imbdRating;
+        this.ImdbRating = imdbRating;
     }
    public Movie(){
         this.name="";
-        this.ImbdRating =0;
+        this.ImdbRating =0;
         this.durationInMinutes=0;
     }
 }
