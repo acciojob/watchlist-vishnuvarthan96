@@ -52,7 +52,7 @@ public class MovieService {
    public void deleteDirectorByName(String name){
         repo.deleteDirectorByName(name);
     }
-    public void deleteAllDirector(){
+    public void deleteAllDirectors(){
         repo.deleteAllDirectors();
     }
 

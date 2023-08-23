@@ -21,24 +21,24 @@ public class Director {
     }
 
     public double getImbdRating() {
-        return imbdRating;
+        return ImbdRating;
     }
 
     public void setImbdRating(double imbdRating) {
-        this.imbdRating = imbdRating;
+        this.ImbdRating = imbdRating;
     }
 
     private String name;
     private int numberOfMovies;
-    private double imbdRating;
+    private double ImbdRating;
    public Director(String name,int numberOfMovies,double imbdRating){
         this.name=name;
         this.numberOfMovies=numberOfMovies;
-        this.imbdRating =imbdRating;
+        this.ImbdRating =imbdRating;
     }
     public Director(){
         this.name="";
-        this.imbdRating =0;
+        this.ImbdRating =0;
         this.numberOfMovies=0;
     }
 }
